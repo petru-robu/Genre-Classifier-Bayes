@@ -12,7 +12,7 @@ mfcc13_var,mfcc14_mean,mfcc14_var,mfcc15_mean,mfcc15_var,mfcc16_mean,mfcc16_var,
 mfcc17_mean,mfcc17_var,mfcc18_mean,mfcc18_var,mfcc19_mean,mfcc19_var,mfcc20_mean,
 mfcc20_var,label"""
 
-NBINS = 20
+NBINS = 9
 SMOOTHING = 1
 
 feature_idx = {i: f.strip() for i, f in enumerate(FEATURES_STR.split(','))}
@@ -28,14 +28,14 @@ RELEVANT_FEATURES.append(idx_of_feature['spectral_centroid_mean'])
 RELEVANT_FEATURES.append(idx_of_feature['spectral_centroid_var'])
 RELEVANT_FEATURES.append(idx_of_feature['spectral_bandwidth_mean'])
 RELEVANT_FEATURES.append(idx_of_feature['spectral_bandwidth_var'])
-# RELEVANT_FEATURES.append(idx_of_feature['rolloff_mean'])
-# RELEVANT_FEATURES.append(idx_of_feature['rolloff_var'])
-# RELEVANT_FEATURES.append(idx_of_feature['zero_crossing_rate_mean'])
-# RELEVANT_FEATURES.append(idx_of_feature['zero_crossing_rate_var'])
+RELEVANT_FEATURES.append(idx_of_feature['rolloff_mean'])
+RELEVANT_FEATURES.append(idx_of_feature['rolloff_var'])
+RELEVANT_FEATURES.append(idx_of_feature['zero_crossing_rate_mean'])
+RELEVANT_FEATURES.append(idx_of_feature['zero_crossing_rate_var'])
 RELEVANT_FEATURES.append(idx_of_feature['harmony_mean'])
 RELEVANT_FEATURES.append(idx_of_feature['harmony_var'])
-# RELEVANT_FEATURES.append(idx_of_feature['perceptr_mean'])
-# RELEVANT_FEATURES.append(idx_of_feature['perceptr_var'])
+RELEVANT_FEATURES.append(idx_of_feature['perceptr_mean'])
+RELEVANT_FEATURES.append(idx_of_feature['perceptr_var'])
 for i in range(1, 21):
     RELEVANT_FEATURES.append(idx_of_feature[f'mfcc{i}_mean'])
     RELEVANT_FEATURES.append(idx_of_feature[f'mfcc{i}_var'])
