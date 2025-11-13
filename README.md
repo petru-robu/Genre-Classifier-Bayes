@@ -1,9 +1,7 @@
 # Naive Bayes Genre Classifier
 This project attempts to solve the genre classification problem by using a Multinomial Naive Bayes Classifier.
+Docs: [Genre Classifier Bayes](./Genre_Classifer_Bayes.pdf)
 
-## Docs: [Genre Classifier Bayes](./Genre_Classifer_Bayes.pdf)
-
-# Running instructions
 ## Data
 The classifier uses the GTZAN Music Genre Dataset. The data is split in two halves: `half1.csv` and `half2.csv`.
 The model can be trained on a half and tested on the other.
