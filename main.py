@@ -77,7 +77,6 @@ def plot_confusion_matrices(cms, labels):
         ax.set_title(f"{label} Confusion Matrix")
         ax.set_xlabel("Predicted")
         ax.set_ylabel("Actual")
-    plt.tight_layout()
     plt.savefig('plots/confusion.svg')
 
 

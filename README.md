@@ -8,7 +8,6 @@ There are three types of Bayes classifiers explored in this project:
 - Discrete Naive Bayes (DNB): discretizes continuous features into bins for categorical probabilities.
 - Hybrid Naive Bayes (HNB): automatically chooses Gaussian or Discrete treatment per feature based on skewness.
 
-
 ## Data
 The classifier uses the GTZAN Music Genre Dataset. The data is split for training and test.
 
@@ -42,4 +41,6 @@ As we can observe in the plots below, certain genres are classified with high ac
 ```bash
 source ./env/bin/activate
 pip install -r requirements.txt
+
+python main.py
 ```
