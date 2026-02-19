@@ -33,7 +33,6 @@ The relatively low accuracy is expected. Naive-Bayes works by considering indepe
 
 As we can observe in the plots below, certain genres are classified with high accuracy (i.e. classical, metal, etc.). This is due to the fact that these genres are distinct, while genres like rock, pop, country, blues have similar elements and may have very close features.
 ![plots/pergerne.svg](plots/pergenre.svg)
-![plots/confusion.svg](plots/confusion.svg)
 
 ## Running Instructions
 
